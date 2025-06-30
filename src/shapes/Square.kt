@@ -6,7 +6,5 @@ class Square(
 ) : Rectangle(
     point,
     Point(point.x + length, point.y + length)
-) {
-
-}
+)
 

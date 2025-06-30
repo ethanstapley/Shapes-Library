@@ -7,6 +7,11 @@ class Triangle(
     val point2: Point,
     val point3: Point
 ) {
+    init {
+        if (getArea() <= 0.0) {
+            throw IllegalArgumentException("Can't have Shape with an Area of '0')")
+        }
+    }
     fun getArea(): Double {
         val x1 = point1.x
         val x2 = point2.x

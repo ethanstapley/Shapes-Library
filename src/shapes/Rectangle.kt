@@ -6,7 +6,11 @@ open class Rectangle(
     val point1: Point,
     val point2: Point
 ) {
-
+    init {
+        if (getArea() <= 0.0) {
+            throw IllegalArgumentException("Can't have Shape with an Area of '0')")
+        }
+    }
     fun getHeight(): Double {
         return abs(point2.y - point1.y)
     }

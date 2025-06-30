@@ -7,7 +7,5 @@ class Circle(
     point,
     radii,
     radii
-) {
-
-}
+)
 

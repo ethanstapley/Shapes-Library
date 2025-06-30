@@ -1,9 +1,15 @@
 package shapes
 
 class Point (
-    val x: Double,
-    val y: Double
+    x: Double,
+    y: Double
 ) {
+    var x: Double = x
+        private set
+
+    var y: Double = y
+        private set
+
     fun clonePoint(): Point {
         return Point(x, y)
     }
