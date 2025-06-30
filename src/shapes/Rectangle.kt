@@ -3,8 +3,8 @@ package shapes
 import kotlin.math.abs
 
 class Rectangle(
-    private val point1: Point,
-    private val point2: Point
+    val point1: Point,
+    val point2: Point
 ) {
 
     fun getHeight(): Double {
