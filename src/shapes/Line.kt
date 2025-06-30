@@ -7,6 +7,11 @@ class Line(
     private val point1: Point,
     private val point2: Point
 ) {
+    init {
+        if (getLength() <= 0.0) {
+            throw IllegalArgumentException("Can't have Line with a Length of '0')")
+        }
+    }
 
     fun getSlope(): Double {
         return (point2.x - point1.x) / (point2.y - point1.y)

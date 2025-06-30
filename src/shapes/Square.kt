@@ -7,4 +7,3 @@ class Square(
     point,
     Point(point.x + length, point.y + length)
 )
-

@@ -11,6 +11,7 @@ open class Rectangle(
             throw IllegalArgumentException("Can't have Shape with an Area of '0')")
         }
     }
+
     fun getHeight(): Double {
         return abs(point2.y - point1.y)
     }

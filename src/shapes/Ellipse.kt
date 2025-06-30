@@ -12,6 +12,7 @@ open class Ellipse(
             throw IllegalArgumentException("Can't have Shape with an Area of '0')")
         }
     }
+
     fun getArea(): Double {
         return radii2 * radii1 * PI
     }
