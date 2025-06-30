@@ -2,7 +2,7 @@ package shapes
 
 import kotlin.math.abs
 
-class Rectangle(
+open class Rectangle(
     val point1: Point,
     val point2: Point
 ) {

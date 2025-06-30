@@ -2,7 +2,7 @@ package shapes
 
 import kotlin.math.PI
 
-class Ellipse(
+open class Ellipse(
     val center: Point,
     val radii1: Double,
     val radii2: Double
