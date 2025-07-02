@@ -26,11 +26,7 @@ class Line(
         point2.movePoint(x, y)
     }
 
-    fun getPoint1(): Point {
-        return point1.clonePoint();
-    }
+    fun getPoint1(): Point = point1.clonePoint();
 
-    fun getPoint2(): Point {
-        return point2.clonePoint();
-    }
+    fun getPoint2(): Point = point2.clonePoint();
 }
