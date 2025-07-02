@@ -21,7 +21,7 @@ open class Ellipse(
         center.movePoint(x, y)
     }
 
-    fun center(): Point {
-        return center().clonePoint();
+    fun getCenter(): Point {
+        return center.clonePoint();
     }
 }
