@@ -25,4 +25,12 @@ class Line(
         point1.movePoint(x, y)
         point2.movePoint(x, y)
     }
+
+    fun getPoint1(): Point {
+        return point1;
+    }
+
+    fun getPoint2(): Point {
+        return point2;
+    }
 }

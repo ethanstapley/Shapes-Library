@@ -9,7 +9,7 @@ class Triangle(
 ) {
     init {
         if (getArea() <= 0.0) {
-            throw IllegalArgumentException("Can't have Shape with an Area of '0')")
+            throw IllegalArgumentException("Can't have Shape with an Area of '0'")
         }
     }
 
