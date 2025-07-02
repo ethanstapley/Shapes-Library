@@ -35,5 +35,13 @@ class LineTest {
         assertEquals(line.getSlope(), 1.0)
     }
 
-
+    @Test
+    fun testMove() {
+        val line = Line(Point(0.0, 0.0), Point(3.0, 3.0))
+        line.move(1.0, 1.0)
+        assertEquals(line.getPoint1().x, 1.0)
+        assertEquals(line.getPoint1().y, 1.0)
+        assertEquals(line.getPoint2().x, 4.0)
+        assertEquals(line.getPoint2().y, 4.0)
+    }
 }

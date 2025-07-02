@@ -3,7 +3,7 @@ package shapes
 import kotlin.math.PI
 
 open class Ellipse(
-    val center: Point,
+    private val center: Point,
     val radii1: Double,
     val radii2: Double
 ) {
@@ -21,4 +21,7 @@ open class Ellipse(
         center.movePoint(x, y)
     }
 
+    fun center(): Point {
+        return center().clonePoint();
+    }
 }

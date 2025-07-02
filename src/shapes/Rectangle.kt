@@ -3,8 +3,8 @@ package shapes
 import kotlin.math.abs
 
 open class Rectangle(
-    val point1: Point,
-    val point2: Point
+    private val point1: Point,
+    private val point2: Point
 ) {
     init {
         if (getArea() <= 0.0) {
@@ -27,6 +27,14 @@ open class Rectangle(
     fun move(x: Double, y: Double) {
         point1.movePoint(x, y)
         point2.movePoint(x, y)
+    }
+
+    fun getPoint1(): Point {
+        return point1.clonePoint();
+    }
+
+    fun getPoint2(): Point {
+        return point2.clonePoint();
     }
 
 }

@@ -27,10 +27,10 @@ class Line(
     }
 
     fun getPoint1(): Point {
-        return point1;
+        return point1.clonePoint();
     }
 
     fun getPoint2(): Point {
-        return point2;
+        return point2.clonePoint();
     }
 }
